@@ -1,0 +1,35 @@
+{
+  "id": "the-chase",
+  "kicker": "Essay",
+  "title": "The Chase for Life’s Origins",
+  "bylinePrefix": "By",
+  "author": "Yasemin Saplakoglu",
+  "dek": "Each of the three stories is beautiful. Each may also be wrong — or only a fragment.",
+  "heroVisual": "earth-formation-loop",
+  "heroScenes": [
+    { "threshold": 0, "visual": "earth-formation-loop" },
+    { "threshold": 0.4, "visual": "hadean-glow" },
+    { "threshold": 0.75, "visual": "ocean-haze" }
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "heading": "Three opening scenes, no finished play",
+      "colorStage": "hadean",
+      "body": "PLACEHOLDER — full paragraph(s) go here verbatim from doc.\n\nRNA World, lipids first, metabolism first: each is a bet about order. Each has a favorite site, a favorite molecule, and a list of experiments that almost close the gap. This piece is not a tiebreaker. It is a takedown — or at least a refusal to let any of the three stand as the origin of life.\n\nA replicating ribozyme that cannot be made from a Hadean sky is not a first organism. A vesicle that divides without a metabolism is a soap bubble. A vent that makes organics without a lineage is geology."
+    },
+    {
+      "type": "text",
+      "heading": "What is left standing",
+      "colorStage": "ocean",
+      "body": "PLACEHOLDER — full paragraph(s) go here verbatim from doc.\n\nThe honest remainder is a set of constraints, not a cradle. Concentration. Energy far from equilibrium. A boundary. A heritable variant. The three stories each supply one of those and then claim the rest will follow. The chase is what happens when they do not.\n\nRead the three first, or start here if you want the argument before the scenery. The visuals were built to be merged. The science has not been."
+    },
+    {
+      "type": "quote",
+      "speaker": "John Baross",
+      "role": "Oceanographer, University of Washington",
+      "text": "We may never see the first organism. We can still be rigorous about the conditions it required.",
+      "colorStage": "soup"
+    }
+  ]
+}

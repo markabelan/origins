@@ -1,0 +1,27 @@
+{
+  "id": "lipids-first",
+  "kicker": "Explainer",
+  "title": "Lipids First",
+  "bylinePrefix": "By",
+  "author": "Perri Thaler",
+  "dek": "Compartments arrive before genes. Chemistry learns to stay in one place.",
+  "heroVisual": "ocean-haze",
+  "heroScenes": [
+    { "threshold": 0, "visual": "ocean-haze" },
+    { "threshold": 0.6, "visual": "soup-amber" }
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "heading": "A room before a recipe",
+      "colorStage": "ocean",
+      "body": "PLACEHOLDER — full paragraph(s) go here verbatim from doc.\n\nFatty-acid vesicles form spontaneously. They grow. They divide. They keep a inside and an outside. In the lipid-first telling, that is not a late luxury — it is the opening move. Without a room, chemistry is a river. With a room, a reaction can persist when the tide changes.\n\nThe vesicles do not need a genome to be interesting. They need a supply of amphiphiles, a wet-dry cycle or a shear, and a reason for one bubble to outlast another."
+    },
+    {
+      "type": "text",
+      "heading": "Inheritance without a gene",
+      "colorStage": "soup",
+      "body": "PLACEHOLDER — full paragraph(s) go here verbatim from doc.\n\nSome researchers argue that composition itself can be hereditary: the mix of lipids in a membrane is a kind of memory. Others say a compartment is only useful once something inside it starts to copy.\n\nThis piece is the case for rooms first — and the holes in that case, which the closer will press on."
+    }
+  ]
+}

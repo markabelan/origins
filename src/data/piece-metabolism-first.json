@@ -1,0 +1,33 @@
+{
+  "id": "metabolism-first",
+  "kicker": "Explainer",
+  "title": "Metabolism First",
+  "bylinePrefix": "By",
+  "author": "Jake Buehler",
+  "dek": "Energy gradients and autocatalytic cycles come before information. The fire precedes the recipe.",
+  "heroVisual": "vent-silhouette",
+  "heroScenes": [
+    { "threshold": 0, "visual": "vent-silhouette" },
+    { "threshold": 0.5, "visual": "ocean-haze" }
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "heading": "A fire with no bookkeeping",
+      "colorStage": "ocean",
+      "body": "PLACEHOLDER — full paragraph(s) go here verbatim from doc.\n\nMetabolism-first stories start with energy, not genes. A {proton gradient|A difference in hydrogen-ion concentration across a barrier — a form of stored energy cells still use.} across a mineral pore. An autocatalytic network that eats carbon dioxide and hydrogen and makes more of itself. The cell, in this telling, is what happens when geology is captured.\n\nAlkaline vents are the favored stage: not black smokers, but paler chimneys whose walls already do the work that membranes and pumps would later inherit."
+    },
+    {
+      "type": "sceneBreak",
+      "component": "ProtonGradient",
+      "caption": "Hydrogen ions drift across a barrier. In cells, this flow still pays the bills.",
+      "colorStage": "ocean"
+    },
+    {
+      "type": "text",
+      "heading": "Cycles that may not close",
+      "colorStage": "hadean",
+      "body": "PLACEHOLDER — full paragraph(s) go here verbatim from doc.\n\nThe hard part is not drawing a cycle. It is showing that the cycle runs without the enzymes that modern cells use to force it. Some steps are easy in water. Some are not.\n\nThis piece is the case for metabolism as the first living thing — a flame that later learned to write itself down."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "masthead": "Origins",
+  "kicker": "Special series",
+  "title": "The Origins of Life",
+  "dek": "Three stories about how chemistry became biology — a molecule that copies, a membrane that holds, a fire that runs. Then a fourth that asks whether any of them can be the first chapter.",
+  "stories": [
+    {
+      "id": "rna-world",
+      "kicker": "Explainer",
+      "title": "RNA World",
+      "bylinePrefix": "By",
+      "author": "Philip Ball",
+      "dek": "A single polymer that stores the recipe and runs the kitchen — before DNA, before proteins.",
+      "media": "/media/rna.png?v=2",
+      "cta": "Go to article"
+    },
+    {
+      "id": "lipids-first",
+      "kicker": "Explainer",
+      "title": "Lipids First",
+      "bylinePrefix": "By",
+      "author": "Perri Thaler",
+      "dek": "A single polymer that stores the recipe and runs the kitchen — before DNA, before proteins.",
+      "media": "/media/lipids.png?v=2",
+      "cta": "Go to article"
+    },
+    {
+      "id": "metabolism-first",
+      "kicker": "Explainer",
+      "title": "Metabolism",
+      "bylinePrefix": "By",
+      "author": "Jake Buehler",
+      "dek": "A single polymer that stores the recipe and runs the kitchen — before DNA, before proteins.",
+      "media": "/media/metabolism.png?v=2",
+      "cta": "Go to article"
+    }
+  ],
+  "chase": {
+    "id": "the-chase",
+    "kicker": "Essay",
+    "title": "The Chase for Life’s Origins",
+    "bylinePrefix": "By",
+    "author": "Yasemin Saplakoglu",
+    "dek": "Each of the three stories is beautiful. Each may also be wrong — or only a fragment. This is the piece that knocks them down, and asks what is left standing.",
+    "media": "/media/chase.png?v=2",
+    "cta": "Go to article"
+  }
+}

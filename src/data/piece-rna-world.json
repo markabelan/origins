@@ -1,0 +1,34 @@
+{
+  "id": "rna-world",
+  "kicker": "Explainer",
+  "title": "RNA World",
+  "bylinePrefix": "By",
+  "author": "Philip Ball",
+  "dek": "A single polymer that stores the recipe and runs the kitchen — before DNA, before proteins.",
+  "heroVisual": "soup-amber",
+  "heroScenes": [
+    { "threshold": 0, "visual": "soup-amber" },
+    { "threshold": 0.55, "visual": "ocean-haze" }
+  ],
+  "sections": [
+    {
+      "type": "text",
+      "heading": "One molecule, two jobs",
+      "colorStage": "soup",
+      "body": "PLACEHOLDER — full paragraph(s) go here verbatim from doc.\n\nThe RNA World is the most famous first chapter in origins research. It says life began as a polymer that could both carry information and catalyze reactions — a {ribozyme|An RNA molecule capable of catalyzing chemical reactions.} that copies itself, or copies a cousin, before DNA or coded proteins exist.\n\nThe attraction is economy. You do not need a translation system yet. You do not need a genome written in a more stable alphabet. You need a strand, a way to concentrate it, and enough time for Darwinian copying to begin."
+    },
+    {
+      "type": "quote",
+      "speaker": "Walter Gilbert",
+      "role": "Molecular biologist",
+      "text": "The first stage of evolution proceeded by RNA molecules performing the catalytic activities necessary to assemble themselves from a nucleotide soup.",
+      "colorStage": "soup"
+    },
+    {
+      "type": "text",
+      "heading": "What the story still owes us",
+      "colorStage": "ocean",
+      "body": "PLACEHOLDER — full paragraph(s) go here verbatim from doc.\n\nMaking RNA from a lifeless Earth is not a solved problem. Nucleotides are fussy. Water attacks polymers. A replicating ribozyme in a dilute pond is a hope, not a demonstration.\n\nThis piece holds the RNA World still: its elegance, its experimental near-misses, and the reasons some researchers think it is a beautiful second chapter pretending to be the first."
+    }
+  ]
+}

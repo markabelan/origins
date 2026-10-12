@@ -1,0 +1,354 @@
+@font-face {
+  font-family: "Noe Display";
+  src: url("/fonts/NoeDisplayBold.otf") format("opentype");
+  font-weight: 600 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pangram";
+  src: url("/fonts/Pangram-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pangram";
+  src: url("/fonts/Pangram-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pangram";
+  src: url("/fonts/Pangram-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pangram";
+  src: url("/fonts/Pangram-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/Merriweather-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/Merriweather-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/Merriweather-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("/fonts/Merriweather-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --color-bg: #071211;
+  --color-text: #f3ead4;
+  --color-text-muted: #cbbfa6;
+  --color-accent: #f0eadc;
+  --color-cta: #d27455;
+  --color-sea: #9ec4bc;
+  --font-display: "Noe Display", Georgia, serif;
+  --font-serif: "Merriweather", Georgia, serif;
+  --font-sans: "Pangram", system-ui, sans-serif;
+  --header-h: 46px;
+  --nav-h: 46px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-h) + 12px);
+}
+
+body {
+  margin: 0;
+  background: #071211;
+  color: var(--color-text);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+.bubbles {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -24px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(198, 224, 218, 0.22);
+  animation-name: boil;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes boil {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.65);
+    opacity: 0;
+  }
+  10% {
+    opacity: var(--peak, 0.16);
+  }
+  78% {
+    opacity: calc(var(--peak, 0.16) * 0.55);
+  }
+  100% {
+    transform: translate3d(var(--drift, 0px), -112vh, 0) scale(1.08);
+    opacity: 0;
+  }
+}
+
+button,
+a {
+  font-family: var(--font-sans);
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.progress {
+  position: sticky;
+  top: var(--nav-h);
+  z-index: 19;
+  background: color-mix(in srgb, var(--color-bg) 86%, transparent);
+}
+
+.progress__track {
+  height: 2px;
+  background: color-mix(in srgb, var(--color-text) 12%, transparent);
+}
+
+.progress__fill {
+  height: 100%;
+  background: var(--color-cta);
+  transition: width 0.08s linear, background 0.6s ease;
+}
+
+.reading__heading {
+  font-size: 1.65rem;
+  margin: 0 0 1rem;
+}
+
+.reading__body p {
+  font-size: 1.18rem;
+  line-height: 1.75;
+  margin: 0 0 1.15rem;
+}
+
+.reading__placeholder {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  color: color-mix(in srgb, var(--color-text-muted) 72%, transparent);
+  margin-bottom: 0.65rem;
+}
+
+.quote {
+  margin: 2rem 0;
+  padding: 0 0 0 1.25rem;
+  border-left: 2px solid var(--color-cta);
+}
+
+.quote__text {
+  margin: 0;
+  font-size: 1.35rem;
+  line-height: 1.45;
+}
+
+.quote__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-top: 0.85rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+}
+
+.quote__role {
+  color: var(--color-text-muted);
+}
+
+.glossary {
+  position: relative;
+  display: inline;
+}
+
+.glossary__term {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  cursor: help;
+  border-bottom: 1px dotted var(--color-accent);
+}
+
+.glossary__pop {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 8px);
+  width: min(260px, 70vw);
+  padding: 0.7rem 0.8rem;
+  background: #16141f;
+  border: 1px solid color-mix(in srgb, var(--color-text) 14%, transparent);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  z-index: 5;
+}
+
+.glossary__pop strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.glossary-block {
+  padding: 1rem 0 0.25rem;
+  border-top: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+}
+
+.glossary-block p {
+  font-family: var(--font-sans);
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 2rem 0;
+}
+
+.divider__rule {
+  flex: 1;
+  height: 1px;
+  background: color-mix(in srgb, var(--color-text) 14%, transparent);
+}
+
+.divider__label {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.scene-break {
+  margin: 2.5rem -0.5rem;
+  padding: 1rem 0 0.5rem;
+}
+
+.scene-caption,
+.scene-caption-inline {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  margin: 0.75rem 1rem 0;
+}
+
+.scene-anchor {
+  margin: 0.8rem 1rem 0;
+  font-size: 1.05rem;
+  color: var(--color-cta);
+}
+
+.gradient-scene {
+  background: #100e16;
+  padding: 0.5rem 0 0.75rem;
+}
+
+.gradient-scene__svg {
+  width: 100%;
+  height: 170px;
+}
+
+.gradient-scene__label {
+  fill: #b8b2a4;
+  font-size: 10px;
+  font-family: var(--font-sans);
+}
+
+.ion {
+  fill: #e0742f;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.ion--1 { animation: ion-drop 3.4s linear infinite; }
+.ion--2 { animation: ion-drop 3.8s linear 0.4s infinite; }
+.ion--3 { animation: ion-drop 3.1s linear 0.9s infinite; }
+.ion--4 { animation: ion-drop 4.2s linear 0.2s infinite; }
+.ion--5 { animation: ion-drop 3.6s linear 1.3s infinite; }
+
+@keyframes ion-drop {
+  0% { transform: translateY(0); opacity: 0.95; }
+  60% { transform: translateY(78px); opacity: 0.35; }
+  100% { transform: translateY(96px); opacity: 0; }
+}
+
+.missing {
+  padding: 4rem 1.5rem;
+  font-family: var(--font-sans);
+}
