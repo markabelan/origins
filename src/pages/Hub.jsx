@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { hub } from '../data'
+import { asset } from '../lib/asset'
 import './Hub.css'
 
 export default function Hub() {
@@ -13,10 +14,10 @@ export default function Hub() {
             muted
             loop
             playsInline
-            poster="/media/hero-poster.png?v=3"
+            poster={asset('/media/hero-poster.png?v=3')}
           >
-            <source src="/media/hero.webm?v=3" type="video/webm" />
-            <source src="/media/hero.mov?v=3" type='video/quicktime; codecs="hvc1"' />
+            <source src={asset('/media/hero.webm?v=3')} type="video/webm" />
+            <source src={asset('/media/hero.mov?v=3')} type='video/quicktime; codecs="hvc1"' />
           </video>
         </div>
         <div className="lede__copy">
@@ -36,7 +37,7 @@ export default function Hub() {
               >
                 <img
                   className="wobble"
-                  src={story.media}
+                  src={asset(story.media)}
                   alt=""
                   style={{ animationDelay: `${-index * 0.37}s` }}
                 />
@@ -62,7 +63,7 @@ export default function Hub() {
         <div className="chase">
           <img
             className="chase__visual wobble"
-            src={hub.chase.media}
+            src={asset(hub.chase.media)}
             alt=""
             style={{ animationDelay: '-0.22s' }}
           />
